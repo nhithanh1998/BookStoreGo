@@ -26,7 +26,5 @@ func OpenConnectionToDatabase(databaseConfig *util.DatabaseConfig) error {
 
 // MigrateModel is a function to migrate model
 func MigrateModel() {
-	BookStoreDB.AutoMigrate(&models.Genre{})
-	genres := []models.Genre{{Name: "Romantic"}, {Name: "Drama"}}
-	BookStoreDB.Create(&genres)
+	BookStoreDB.AutoMigrate(&models.Genre{}, models.Author{}, models.Book{}, models.Publisher{}, models.User{}, models.Wallet{})
 }
