@@ -2,8 +2,7 @@ package models
 
 import "gorm.io/gorm"
 
-// Genre is ...
-type Genre struct {
+// Wallet is ...
+type Wallet struct {
 	gorm.Model
-	Name string
 }

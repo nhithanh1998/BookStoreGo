@@ -2,8 +2,8 @@ package models
 
 import "gorm.io/gorm"
 
-// Genre is ...
-type Genre struct {
+// Publisher is ...
+type Publisher struct {
 	gorm.Model
 	Name string
 }
